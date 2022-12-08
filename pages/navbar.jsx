@@ -24,7 +24,7 @@ function Nav() {
 
       <div onClick={handleNav} className=" block md:hidden">
         {!nav ? (
-          <TfiClose size={35} className=" top-[40%]" />
+          <TfiClose size={35} className=" top-[40%] " />
         ) : (
           <TfiAlignJustify size={35} />
         )}
@@ -33,7 +33,7 @@ function Nav() {
       <div
         className={
           !nav
-            ? " fixed left-0 top-0  w-[60%] h-full bg-[#2D3047] ease-in-out duration-500"
+            ? " fixed left-0 top-0  w-[40%] h-full bg-[#2D3047] ease-in-out duration-500 lg:hidden"
             : "fixed  left-[-100%] duration-300"
         }
       >
