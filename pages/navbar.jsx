@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { TfiAlignJustify, TfiClose } from "react-icons/tfi";
 
-import styles from "../styles/Home.module.css";
 
 function Nav() {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
@@ -24,16 +23,16 @@ function Nav() {
 
       <div onClick={handleNav} className=" block md:hidden">
         {!nav ? (
-          <TfiClose size={35} className=" top-[40%] " />
+          <TfiClose size={25} className=" top-[40%]" />
         ) : (
-          <TfiAlignJustify size={35} />
+          <TfiAlignJustify size={25} />
         )}
       </div>
 
       <div
         className={
           !nav
-            ? " fixed left-0 top-0  w-[40%] h-full bg-[#2D3047] ease-in-out duration-500 lg:hidden"
+            ? " fixed left-0 top-0  w-[60%] h-full bg-[#2D3047] ease-in-out duration-500 md:hidden"
             : "fixed  left-[-100%] duration-300"
         }
       >

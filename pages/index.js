@@ -7,9 +7,11 @@ import Company from "./company";
 import Features from "./features";
 import Crypto from "./currency";
 import SupportedBy from "./supported";
+
 import Socials from "./joinus";
 import FinalSec from "./final";
 import Copyright from "./copyright";
+
 
 export default function Home() {
   return (
@@ -19,7 +21,8 @@ export default function Home() {
       <Company className=" pt-96" />
       <Features />
       <Crypto />
-      <SupportedBy />
+  
+      <SupportedBy /> 
       <Socials />
       <FinalSec />
       <Copyright />
